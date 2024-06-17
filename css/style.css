@@ -1,0 +1,184 @@
+
+@font-face{
+    font-family: 'Montserrat' ;
+    src:url('Montserrat-Regular.ttf') ;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: normal 14pt "Montserrat";
+    color: #333;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: normal;
+    font-size: 20pt;
+    margin: 20px 0 10px;
+}
+
+h1 {
+    font-size: 24pt;
+}
+
+h2 {
+    font-size: 22pt;
+}
+
+.btn {
+    text-decoration: none;
+    border: 2px solid #666;
+    border-radius: 3px;
+    background: #666;
+    color: #f1f1f1;
+}
+
+.btn:hover {
+    border: 2px solid #333;
+    border-radius: 3px;
+    background: #333;
+    color: #fff;
+}
+
+main,
+header {
+    width: 90%;
+    margin: 30px auto;
+}
+
+main h1 {
+    border: 1px solid#ccc;
+    border-radius: 5px;
+    background: #f1f1f1;
+    color: #666;
+    padding: 20px;
+    margin: 5px 0 60px;
+}
+
+form {
+    overflow: auto;
+}
+
+/* header */
+
+header {
+    text-align: right;
+    margin: 20px 0;
+}
+
+header button {
+    cursor: pointer;
+}
+
+
+/* right */
+
+.left label,
+.legend {
+    color: #7a7a7a;
+}
+
+.left input,
+.left button,
+.clean button,
+.btn {
+    font: normal 12pt "Montserrat";
+    padding: 8px;
+    margin-top: 10px;
+}
+
+.left input {
+    border-radius: 3px;
+    border: 1px solid #666;
+    width: 65%;
+}
+
+.left input:focus {
+    outline: 1px solid #1c7fff;
+    box-shadow: 0 0 3px #1c7fff;
+    border-radius: 5px;
+    border: 1px solid #1c7fff;
+}
+
+.left button {
+    border: 2px solid #666;
+    border-radius: 3px;
+    background: #666;
+    color: #f1f1f1;
+    width: 25%;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.left button:hover {
+    border: 2px solid #333;
+    border-radius: 3px;
+    background: #333;
+    color: #fff;
+}
+
+/* right */
+
+.right p {
+    margin: 30px 0 10px;
+    color: #7a7a7a;
+}
+
+.right ol {
+    list-style: none;
+    border: 1px solid#ccc;
+    border-radius: 5px;
+    min-height: 200px;
+
+    padding: 10px;
+}
+
+.right ol li {
+    border: 1px solid#ccc;
+    border-radius: 3px;
+    background: #f1f1f1;
+    color: #666;
+
+    padding: 5px 8px;
+    margin-bottom: 5px;
+}
+
+.button {
+    font-size: 11pt;
+    color: #666;
+    text-align: center;
+    margin-top: 150px;
+}
+
+@media(min-width: 850px) {
+    .left {
+        width: 45%;
+        float: left;
+    }
+
+    .right {
+        width: 53%;
+        float: left;
+    }
+
+    .right p {
+        margin: 0 0 10px;
+        color: #7a7a7a;
+    }
+}
+
+@media(min-width: 1000px) {
+    main,
+    header {
+        width: 900px;
+        margin-left: 5%;
+    }
+}
