@@ -4,7 +4,10 @@
     session_start();
 
     if(!isset($_SESSION['arr'])) $_SESSION['arr'] = array();
-    $last = (!empty($_SESSION['arr']))? end($_SESSION['arr']): "Slug generate PHP";
+    $last = (!empty($_SESSION['arr']))? $_SESSION['arr'][0]: "Slug generate PHP";
+
+    // pega o ultimo elemento do array
+    // end($_SESSION['arr'])
 
     // condition to reset session
     if(isset($_GET['clean'])) {
