@@ -13,8 +13,10 @@
 	}
 
     $slug = slug($phrase);
+    // if array is empty
     if(sizeof($_SESSION['arr'])==0) {$_SESSION['arr'][] = $slug;}
-    else {array_unshift($_SESSION['arr'], $slug);}
+    // if array is not empty
+    else {array_unshift($_SESSION['arr'], $slug);} // the funtion array_unshift add new element in bigin of array
 
     // requisition o index page
     require_once("index.php");
