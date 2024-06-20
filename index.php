@@ -39,6 +39,10 @@
                 <label for="phrase">Phrase</label><br>
                 <input type="text" name="phrase" id="phrase" placeholder="Enter your phrase..." autofocus required>
                 <button type="submit">Generate</button>
+
+                <p class="description">
+                    This simple app, as create to shere knowledge end to set value in my github. You can use this, becouse i use license MIT to this app. Lord blass you.
+                </p>
             </div> <!-- /.left -->
             <div class="right">
                 <p>Generation slug history.</p>
