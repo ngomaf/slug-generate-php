@@ -70,7 +70,8 @@ form {
 
 header {
     text-align: right;
-    margin: 20px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 header button {
@@ -82,7 +83,7 @@ header button {
 
 .left label,
 .legend {
-    color: #7a7a7a;
+    color: #666;
 }
 
 .left input,
@@ -98,6 +99,7 @@ header button {
     border-radius: 3px;
     border: 1px solid #666;
     width: 65%;
+    margin-left: 2px;
 }
 
 .left input:focus {
@@ -127,7 +129,7 @@ header button {
 
 .description {
     margin-top: 15px;
-    color: #ccc;
+    color: #7a7a7a;
     font-size: 11pt;
     line-height: 25px;
 }
@@ -136,15 +138,14 @@ header button {
 
 .right p {
     margin: 30px 0 10px;
-    color: #7a7a7a;
+    color: #666;
 }
 
 .right ol {
     list-style: none;
     border: 1px solid#ccc;
     border-radius: 5px;
-    min-height: 200px;
-    max-height: 400px;
+    height: 250px;
     overflow-y: scroll;
 
     padding: 10px;
@@ -160,8 +161,9 @@ header button {
     margin-bottom: 5px;
 }
 
-.right ol li:last-child {
+.right ol li:first-child {
     color: #b00f00;
+
 }
 
 .button {
@@ -177,9 +179,13 @@ header button {
         float: left;
     }
 
+    .description {
+        width: 94%;
+    }
+
     .right {
         width: 53%;
-        float: left;
+        float: right;
     }
 
     .right p {

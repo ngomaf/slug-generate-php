@@ -13,7 +13,8 @@
 	}
 
     $slug = slug($phrase);
-    $_SESSION['arr'][] = $slug;
+    if(sizeof($_SESSION['arr'])==0) {$_SESSION['arr'][] = $slug;}
+    else {array_unshift($_SESSION['arr'], $phrase);}
 
     // requisition o index page
     require_once("index.php");
