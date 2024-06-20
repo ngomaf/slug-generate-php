@@ -78,7 +78,7 @@ header button {
 }
 
 
-/* right */
+/* left */
 
 .left label,
 .legend {
@@ -123,6 +123,13 @@ header button {
     border-radius: 3px;
     background: #900;
     color: #fff;
+}
+
+.description {
+    margin-top: 15px;
+    color: #ccc;
+    font-size: 11pt;
+    line-height: 25px;
 }
 
 /* right */
@@ -185,6 +192,5 @@ header button {
     main,
     header {
         width: 900px;
-        margin-left: 5%;
     }
 }
