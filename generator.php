@@ -18,5 +18,5 @@
     // if array is not empty
     else {array_unshift($_SESSION['arr'], $slug);} // the funtion array_unshift add new element in bigin of array
 
-    // requisition o index page
+    // go to index page
     require_once("index.php");
