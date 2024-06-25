@@ -1,4 +1,7 @@
 <?php
+    // error_reporting(E_ALL);
+    // ini_set("display_errors", 1);
+
     session_start();
 
     $phrase = trim($_GET['phrase']);
@@ -13,8 +16,10 @@
 	}
 
     $slug = slug($phrase);
+
     // if array is empty
-    if(sizeof($_SESSION['arr'])==0) {$_SESSION['arr'][] = $slug;}
+    if(empty($_SESSION['arr'])) {$_SESSION['arr'][] = $slug;}
+    
     // if array is not empty
     else {array_unshift($_SESSION['arr'], $slug);} // the funtion array_unshift add new element in bigin of array
 
